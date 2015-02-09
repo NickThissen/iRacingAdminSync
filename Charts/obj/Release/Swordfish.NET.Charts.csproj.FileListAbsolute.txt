@@ -1,0 +1,56 @@
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Charts\bin\Release\Swordfish.NET.Charts.exe
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Charts\bin\Release\Swordfish.NET.Charts.pdb
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Charts\obj\Release\Swordfish.NET.Charts.csprojResolveAssemblyReference.cache
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Charts\obj\Release\ColorLabel.baml
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Charts\obj\Release\CopyToClipboard.baml
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Charts\obj\Release\ColorLabel.g.cs
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Charts\obj\Release\CopyToClipboard.g.cs
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Charts\obj\Release\TestPage.g.cs
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Charts\obj\Release\App.g.cs
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Charts\obj\Release\GeneratedInternalTypeHelper.g.cs
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Charts\obj\Release\Swordfish.NET.Charts_MarkupCompile.cache
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Charts\obj\Release\Swordfish.NET.Charts_MarkupCompile.lref
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Charts\obj\Release\TestPage.baml
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Charts\obj\Release\Themes\Generic.baml
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Charts\obj\Release\Swordfish.NET.Charts.g.resources
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Charts\obj\Release\Swordfish.NET.Charts.Properties.Resources.resources
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Charts\obj\Release\Swordfish.NET.Charts.csproj.GenerateResource.Cache
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Charts\obj\Release\Swordfish.NET.Charts.exe
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Charts\obj\Release\Swordfish.NET.Charts.pdb
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Charts\bin\Release\Swordfish.NET.Charts.exe
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Charts\bin\Release\Swordfish.NET.Charts.pdb
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Charts\obj\Release\Swordfish.NET.Charts.csprojResolveAssemblyReference.cache
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Charts\obj\Release\ColorLabel.baml
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Charts\obj\Release\CopyToClipboard.baml
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Charts\obj\Release\ColorLabel.g.cs
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Charts\obj\Release\CopyToClipboard.g.cs
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Charts\obj\Release\TestPage.g.cs
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Charts\obj\Release\App.g.cs
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Charts\obj\Release\GeneratedInternalTypeHelper.g.cs
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Charts\obj\Release\Swordfish.NET.Charts_MarkupCompile.cache
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Charts\obj\Release\Swordfish.NET.Charts_MarkupCompile.lref
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Charts\obj\Release\TestPage.baml
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Charts\obj\Release\Themes\Generic.baml
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Charts\obj\Release\Swordfish.NET.Charts.g.resources
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Charts\obj\Release\Swordfish.NET.Charts.Properties.Resources.resources
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Charts\obj\Release\Swordfish.NET.Charts.csproj.GenerateResource.Cache
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Charts\obj\Release\Swordfish.NET.Charts.exe
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Charts\obj\Release\Swordfish.NET.Charts.pdb
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Charts\bin\Release\Swordfish.NET.Charts.exe
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Charts\bin\Release\Swordfish.NET.Charts.pdb
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Charts\obj\Release\ColorLabel.baml
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Charts\obj\Release\CopyToClipboard.baml
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Charts\obj\Release\ColorLabel.g.cs
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Charts\obj\Release\CopyToClipboard.g.cs
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Charts\obj\Release\TestPage.g.cs
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Charts\obj\Release\App.g.cs
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Charts\obj\Release\GeneratedInternalTypeHelper.g.cs
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Charts\obj\Release\Swordfish.NET.Charts_MarkupCompile.cache
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Charts\obj\Release\Swordfish.NET.Charts_MarkupCompile.lref
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Charts\obj\Release\TestPage.baml
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Charts\obj\Release\Themes\Generic.baml
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Charts\obj\Release\Swordfish.NET.Charts.g.resources
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Charts\obj\Release\Swordfish.NET.Charts.Properties.Resources.resources
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Charts\obj\Release\Swordfish.NET.Charts.csproj.GenerateResource.Cache
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Charts\obj\Release\Swordfish.NET.Charts.exe
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Charts\obj\Release\Swordfish.NET.Charts.pdb

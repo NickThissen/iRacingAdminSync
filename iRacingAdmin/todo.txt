@@ -1,0 +1,23 @@
+﻿Done:
+- Order by class position, per class
+- Add reset offtracks button
+
+
+Not tested:
+- Handle messages on server in queue
+- Change driver in iRacing --> crash (collection modified)
+- Crash with sync update during sync update
+- Penalty list update removes popup
+
+
+Todo:
+- Implement camera sync
+- Implement server alive checking
+
+- Sort by car number incorrect order
+- Sort by class position or position: wrong order, wrong positions????
+- Pos and class pos NON live
+- Update penalty after decided
+- Add team to liveadmin
+- Served column in decided penalty
+- Decided penalty sort by Decided Time (or Start if not decided yet)

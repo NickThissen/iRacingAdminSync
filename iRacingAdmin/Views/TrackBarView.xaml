@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="iRacingAdmin.Views.TrackBarView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:models="clr-namespace:iRacingAdmin.Models"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+
+    <Grid>
+        <Canvas HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+            <Line Stroke="White" StrokeThickness="2" X1="10" Y1="40" Y2="40" UseLayoutRounding="False" X2="{Binding LineWidth, UpdateSourceTrigger=PropertyChanged}" />
+        </Canvas>
+
+        <ListBox ItemsSource="{Binding Drivers, UpdateSourceTrigger=PropertyChanged}"
+            Background="Transparent" BorderBrush="Transparent" Margin="10" HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <Canvas Background="Transparent" />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="{x:Type ListBoxItem}">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
+                    <Setter Property="VerticalContentAlignment" Value="Stretch"></Setter>
+                    <Setter Property="Canvas.Left" Value="{Binding Path=AbsoluteLapDistance}" />
+                </Style>
+            </ListBox.ItemContainerStyle>
+            <ListBox.ItemTemplate>
+                <DataTemplate DataType="models:TrackBarModel.TrackBarDriver">
+                    <Grid Width="30">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="20" />
+                            <RowDefinition Height="10" />
+                            <RowDefinition Height="10" />
+                            <RowDefinition Height="20" />
+                        </Grid.RowDefinitions>
+
+                        <!-- Admin color Rectangle -->
+                        <Rectangle Width="30" Height="20"
+                                 HorizontalAlignment="Center" VerticalAlignment="Center"
+                                 Fill="{Binding DriverContainer.UserCameras.Users, Converter={StaticResource AdminBrushConverter}}" 
+                                 Grid.Row="{Binding Row}" />
+
+                        <!-- Driver nr Rectangle -->
+                        <Rectangle Width="25" Height="16" 
+                                 Fill="{Binding DriverContainer.Driver.CarClassColor, Converter={StaticResource ColorToBrushConverter}}"
+                                 Stroke="White" StrokeThickness="1"
+                                 HorizontalAlignment="Center" VerticalAlignment="Center"
+                                Grid.Row="{Binding Row}" />
+
+                        <!-- Car nr -->
+                            <TextBlock Text="{Binding DriverContainer.Driver.CarNumber}" Foreground="Black"
+                                    FontSize="9pt" Background="Transparent" VerticalAlignment="Center" HorizontalAlignment="Center"
+                                Grid.Row="{Binding Row}" />
+
+                        <Rectangle Grid.Row="{Binding StickRow}" Fill="{Binding DriverContainer.Driver.CarClassColor, Converter={StaticResource ColorToBrushConverter}}" 
+                              StrokeThickness="2" Width="2" Height="10" />
+
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</UserControl>

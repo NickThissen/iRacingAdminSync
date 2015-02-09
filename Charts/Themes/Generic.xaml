@@ -1,0 +1,63 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Swordfish.NET.Charts">
+    <RadialGradientBrush x:Key="RadialGradient1">
+        <RadialGradientBrush.GradientStops>
+            <GradientStopCollection>
+                <GradientStop Color="#FFFFFFFF" Offset="0.59999999999999942"/>
+                <GradientStop Color="sc#0, 1, 1, 1" Offset="1"/>
+            </GradientStopCollection>
+        </RadialGradientBrush.GradientStops>
+    </RadialGradientBrush>
+    <TransformGroup x:Key="Inverter1">
+        <TranslateTransform X="0" Y="0"/>
+        <ScaleTransform ScaleX="1" ScaleY="-1"/>
+        <SkewTransform AngleX="0" AngleY="0"/>
+        <RotateTransform Angle="0"/>
+        <TranslateTransform X="0" Y="0"/>
+        <TranslateTransform X="0" Y="0"/>
+    </TransformGroup>
+
+    <Style TargetType="{x:Type local:ChartControl2}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:ChartControl2}">
+                    <Grid IsHitTestVisible="False" x:Name="_host">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Margin="0,0,0,0" x:Name="_titleBox" Grid.Column="2" Grid.Row="0" Text="Title" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" Background="{StaticResource RadialGradient1}"/>
+                        <local:UniformWrapPanel Margin="0,0,0,0" x:Name="_legendBox" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="1" Background="#2F000000"/>
+                        <Rectangle Margin="0,0,0,0" x:Name="_xTitleBar" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="3" Stroke="{x:Null}" Fill="{StaticResource RadialGradient1}"/>
+                        <Rectangle Margin="0,0,0,0" x:Name="_yTitleBar" Grid.Column="0" Grid.Row="2" Grid.RowSpan="3" Stroke="{x:Null}" Fill="{StaticResource RadialGradient1}"/>
+                        <Rectangle Fill="sc#0.5, 1, 1, 1" Margin="2,0,0,2" x:Name="_xGridLineLabels" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="3" Stroke="{x:Null}" />
+                        <Rectangle Fill="sc#0.5, 1, 1, 1" Margin="2,0,0,2" x:Name="_yGridLineLabels" Grid.Column="1" Grid.Row="2" Grid.RowSpan="2" Stroke="{x:Null}"/>
+                        <local:GridLineCanvas Margin="0,0,0,0" x:Name="_gridLineCanvas" Grid.Column="2" Grid.Row="2"/>
+                        <Image Stretch="None" Name="_imageHost" Margin="0,0,0,0" Grid.Column="2" Grid.Row="2" RenderTransformOrigin="0.5,0.5" RenderTransform="{StaticResource Inverter1}"/>
+                        <local:CursorCoordinateCanvas Margin="0,0,0,0" x:Name="_cursorCoordinateCanvas" Grid.Column="2" Grid.Row="2" RenderTransformOrigin="0.5,0.5" ClipToBounds="False" Background="Transparent" RenderTransform="{StaticResource Inverter1}" />
+                        <ListView x:Name="_subNotes" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" FontSize="10" Visibility="Collapsed">
+                            <ListView.Template>
+                                <ControlTemplate>
+                                    <Border Background="#20000000" SnapsToDevicePixels="True" BorderBrush="Transparent" BorderThickness="1" Padding="1,1,1,1" CornerRadius="8">
+                                        <ItemsPresenter x:Name="ItemsPresenter"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </ListView.Template>
+                        </ListView>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

@@ -1,0 +1,33 @@
+﻿<views:WindowBase x:Class="iRacingAdmin.Views.BookmarksView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:views="clr-namespace:iRacingAdmin.Views"
+        xmlns:server="clr-namespace:iRacingAdmin.Models.Server"
+        xmlns:classes="clr-namespace:iRacingAdmin.Classes"
+                  xmlns:local="clr-namespace:iRacingAdmin.Views"
+        Title="Server Bookmarks" Height="300" Width="400"
+        ShowMinButton="False" ShowMaxRestoreButton="False">
+
+    <DockPanel Background="{DynamicResource AvalonDock_Expression_BaseColor1}">
+        <StackPanel DockPanel.Dock="Bottom" Margin="5,0,5,5" HorizontalAlignment="Left" Orientation="Horizontal">
+            <Button x:Name="btnAdd" Padding="15,10" Click="Button_Click">Add Bookmark</Button>
+            <Button x:Name="btnDelete" Padding="15,10" Click="btnDelete_Click" Margin="15,0">Delete Bookmark</Button>
+        </StackPanel>
+        
+        <DataGrid ItemsSource="{Binding Bookmarks, UpdateSourceTrigger=PropertyChanged}" Margin="5" AutoGenerateColumns="False"
+                  SelectedItem="{Binding SelectedBookmark, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                  CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserResizeColumns="True"
+                  CanUserResizeRows="False" CanUserSortColumns="False">
+            <DataGrid.RowValidationRules>
+                <local:BookmarkValidationRule ValidationStep="UpdatedValue" />
+            </DataGrid.RowValidationRules>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Width="100" Binding="{Binding Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                <DataGridTextColumn Header="IP" Width="100" Binding="{Binding Ip, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                <DataGridTextColumn Header="Port" Binding="{Binding Port, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                <DataGridTextColumn Header="Password" Binding="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </DockPanel>
+    
+</views:WindowBase>

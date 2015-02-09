@@ -1,0 +1,88 @@
+﻿<UserControl x:Class="iRacingAdmin.Views.Tabs.OfftracksView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:charts="clr-namespace:Swordfish.NET.Charts;assembly=Swordfish.NET.Charts"
+             xmlns:drivers="clr-namespace:iRacingAdmin.Models.Drivers"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <DockPanel Background="{DynamicResource WhiteBrush}">
+        
+        <Grid DockPanel.Dock="Top">
+            <Button Margin="5,5,5,0" HorizontalAlignment="Left"
+                    Command="{Binding ViewLimitsCommand}">View Limits</Button>
+            
+            <Button Margin="5,5,5,0" HorizontalAlignment="Right"
+                    Command="{Binding ClearOfftracksCommand}">Clear all offtrack history</Button>
+        </Grid>
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            
+            <charts:ChartControl x:Name="chart" Background="Transparent"
+                             Margin="0"
+                             AxisFontSize="14">
+            </charts:ChartControl>
+            
+            <GridSplitter Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                      Height="5" Width="Auto" ResizeDirection="Rows"
+                      Background="{DynamicResource GrayBrush6}"></GridSplitter>
+
+
+            <Grid Grid.Row="2">
+
+                <DockPanel Grid.Column="0">
+                    <TextBlock DockPanel.Dock="Top"
+                               Style="{DynamicResource HeaderLabel}">Selected drivers</TextBlock>
+                    
+                    <DataGrid ItemsSource="{Binding DriverLines, UpdateSourceTrigger=PropertyChanged}"
+                  x:Name="grid"
+                  SelectedItem="{Binding SelectedDriver, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                  Style="{StaticResource GridStyle}"
+                  IsReadOnly="True">
+
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn Header="" CanUserSort="False">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate DataType="drivers:DriverOfftrackLine">
+
+                                        <Ellipse Width="20"
+                            Height="20">
+                                            <Ellipse.Fill>
+                                                <SolidColorBrush Color="{Binding Line.LineColor}"></SolidColorBrush>
+                                            </Ellipse.Fill>
+                                        </Ellipse>
+
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+
+                            <DataGridTemplateColumn Header="Driver" SortMemberPath="Driver.Driver.Name">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate DataType="drivers:DriverOfftrackLine">
+                                        <TextBlock Text="{Binding Driver.Driver.Name}"
+                               FontWeight="Bold"
+                               Margin="5,3" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+
+                            <DataGridTextColumn Header="Total" Binding="{Binding Driver.Driver.OfftrackTotalCount}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Current" Binding="{Binding Driver.Driver.OfftrackCurrentCount}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Penalties" Binding="{Binding Driver.Driver.OfftrackPenaltyCount}"></DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </DockPanel>
+            </Grid>
+
+
+        </Grid>
+        
+
+    </DockPanel>
+</UserControl>

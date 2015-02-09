@@ -1,0 +1,114 @@
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\Xceed.Wpf.AvalonDock.Themes.Expression.dll
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\Xceed.Wpf.AvalonDock.Themes.Expression.pdb
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\Xceed.Wpf.AvalonDock.dll
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\Xceed.Wpf.AvalonDock.pdb
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\Xceed.Wpf.AvalonDock.xml
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\LightBrushes.baml
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\DarkBrushes.baml
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Controls\UserControl1.g.cs
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Xceed.Wpf.AvalonDock.Themes.Expression_MarkupCompile.cache
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Xceed.Wpf.AvalonDock.Themes.Expression_MarkupCompile.lref
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Controls\UserControl1.baml
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\LightTheme.baml
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Theme.baml
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\DarkTheme.baml
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Xceed.Wpf.AvalonDock.Themes.Expression.g.resources
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Xceed.Wpf.AvalonDock.Themes.Expression.dll
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Xceed.Wpf.AvalonDock.Themes.Expression.pdb
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\Xceed.Wpf.AvalonDock.Themes.Expression.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\Xceed.Wpf.AvalonDock.Themes.Expression.pdb
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\Xceed.Wpf.AvalonDock.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\Xceed.Wpf.AvalonDock.pdb
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\Xceed.Wpf.AvalonDock.xml
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\de\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\es\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\fr\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\hu\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\it\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\ro\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\ru\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\sv\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\LightBrushes.baml
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\DarkBrushes.baml
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Controls\UserControl1.g.cs
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\GeneratedInternalTypeHelper.g.cs
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Xceed.Wpf.AvalonDock.Themes.Expression_MarkupCompile.cache
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Xceed.Wpf.AvalonDock.Themes.Expression_MarkupCompile.lref
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Controls\UserControl1.baml
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\LightTheme.baml
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Theme.baml
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\DarkTheme.baml
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Xceed.Wpf.AvalonDock.Themes.Expression.g.resources
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Xceed.Wpf.AvalonDock.Themes.Expression.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Xceed.Wpf.AvalonDock.Themes.Expression.pdb
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Xceed.Wpf.AvalonDock.Themes.Expression.csprojResolveAssemblyReference.cache
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\Xceed.Wpf.AvalonDock.Themes.Expression.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\Xceed.Wpf.AvalonDock.Themes.Expression.pdb
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\Xceed.Wpf.AvalonDock.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\Xceed.Wpf.AvalonDock.pdb
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\Xceed.Wpf.AvalonDock.xml
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\de\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\es\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\fr\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\hu\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\it\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\ro\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\ru\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\sv\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Xceed.Wpf.AvalonDock.Themes.Expression.csprojResolveAssemblyReference.cache
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\LightBrushes.baml
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\DarkBrushes.baml
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Controls\UserControl1.g.cs
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\GeneratedInternalTypeHelper.g.cs
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Xceed.Wpf.AvalonDock.Themes.Expression_MarkupCompile.cache
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Xceed.Wpf.AvalonDock.Themes.Expression_MarkupCompile.lref
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Controls\UserControl1.baml
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\LightTheme.baml
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Theme.baml
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\DarkTheme.baml
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Xceed.Wpf.AvalonDock.Themes.Expression.g.resources
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Xceed.Wpf.AvalonDock.Themes.Expression.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Xceed.Wpf.AvalonDock.Themes.Expression.pdb
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\Xceed.Wpf.AvalonDock.Themes.Expression.dll
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\Xceed.Wpf.AvalonDock.Themes.Expression.pdb
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\Xceed.Wpf.AvalonDock.dll
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\Xceed.Wpf.AvalonDock.pdb
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\Xceed.Wpf.AvalonDock.xml
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\de\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\es\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\fr\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\hu\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\it\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\ro\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\ru\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\sv\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Xceed.Wpf.AvalonDock.Themes.Expression\bin\Release\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\LightBrushes.baml
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\DarkBrushes.baml
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Controls\UserControl1.g.cs
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\GeneratedInternalTypeHelper.g.cs
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Xceed.Wpf.AvalonDock.Themes.Expression_MarkupCompile.cache
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Xceed.Wpf.AvalonDock.Themes.Expression_MarkupCompile.lref
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Controls\UserControl1.baml
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\LightTheme.baml
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Theme.baml
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\DarkTheme.baml
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Xceed.Wpf.AvalonDock.Themes.Expression.g.resources
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Xceed.Wpf.AvalonDock.Themes.Expression.dll
+F:\Users\Nick\Documents\Programming\Projects\iRacingAdminSync\Xceed.Wpf.AvalonDock.Themes.Expression\obj\Release\Xceed.Wpf.AvalonDock.Themes.Expression.pdb

@@ -1,0 +1,42 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:models="clr-namespace:iRacingAdmin.Models"
+                    xmlns:classes="clr-namespace:iRacingAdmin.Classes"
+                    xmlns:converters="clr-namespace:iRacingAdmin.Converters"
+                    xmlns:drivers="clr-namespace:iRacingAdmin.Models.Drivers">
+
+    <DataTemplate x:Key="DriverDragDropTemplate" DataType="drivers:DriverContainer">
+        
+            <StackPanel Orientation="Horizontal">
+                <Border Width="30"
+                            Height="20"
+                            Background="{Binding Driver.CarClassColor, Converter={StaticResource ColorToBrushConverter}}">
+                    <TextBlock Text="{Binding Driver.CarNumber}" 
+                                   Foreground="Black"
+                                   Padding="0,2"
+                                   HorizontalAlignment="Center"
+                                   FontWeight="Bold" />
+                </Border>
+
+                <TextBlock Text="{Binding Driver.Name}"
+                               FontWeight="Bold"
+                           Foreground="White"
+                               Margin="5,3" />
+            </StackPanel>
+        
+    </DataTemplate>
+    
+    <Style TargetType="DataGridRow" x:Key="DriverGridRowStyle">
+        <Setter Property="Background" Value="{Binding Path=UserCameras.Users, Converter={StaticResource AdminBrushConverter}}" />
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource AccentColorBrush3}" />
+            </Trigger>
+            <Trigger Property="IsSelected" Value="true">
+                <Setter Property="Background" Value="{DynamicResource AccentColorBrush}" />
+            </Trigger>
+ 
+        </Style.Triggers>
+    </Style>
+   
+</ResourceDictionary>

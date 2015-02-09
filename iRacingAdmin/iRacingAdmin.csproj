@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{18E695CC-D00C-49DA-B366-6168AFC946F2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>iRacingAdmin</RootNamespace>
+    <AssemblyName>iRacingAdmin</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <DontImportPostSharp>True</DontImportPostSharp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MahApps.Metro, Version=0.14.0.0, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MahApps.Metro.0.14.0.0\lib\net45\MahApps.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PostSharp">
+      <HintPath>..\packages\PostSharp.3.1.48\lib\net20\PostSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PostSharp.Patterns.Model">
+      <HintPath>..\packages\PostSharp.Patterns.Model.3.1.48\lib\net40\PostSharp.Patterns.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.0.14.0.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Xceed.Wpf.AvalonDock">
+      <HintPath>..\packages\AvalonDock.2.0.2000\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Classes\CameraControl.cs" />
+    <Compile Include="Classes\Sorting\ClassPositionSorter.cs" />
+    <Compile Include="Classes\Sorting\CustomGridSort.cs" />
+    <Compile Include="Classes\DragDrop\DragDropHelper.cs" />
+    <Compile Include="Classes\DragDrop\DraggedAdorner.cs" />
+    <Compile Include="Classes\DragDrop\Utilities.cs" />
+    <Compile Include="Classes\Log.cs" />
+    <Compile Include="Classes\ShortGuid.cs" />
+    <Compile Include="Converters\DeltaTimeColorConverter.cs" />
+    <Compile Include="Models\TimeDelta.cs" />
+    <Compile Include="Controls\PopupDataGrid.cs" />
+    <Compile Include="Converters\AdminBrushConverter.cs" />
+    <Compile Include="Converters\ColorToBrushConverter.cs" />
+    <Compile Include="Converters\DateTimeConverter.cs" />
+    <Compile Include="Converters\PingConverters.cs" />
+    <Compile Include="Extensions\ObservableExtensions.cs" />
+    <Compile Include="Extensions\SettingBindingExtension.cs" />
+    <Compile Include="Models\Drivers\DriverDeltaTime.cs" />
+    <Compile Include="Models\Drivers\DriverOfftrackLimit.cs" />
+    <Compile Include="Models\Drivers\DriverOfftrackLine.cs" />
+    <Compile Include="Models\Drivers\DriverPitInfo.cs" />
+    <Compile Include="Models\Drivers\OfftrackHistory.cs" />
+    <Compile Include="Models\Events\ReplayEventContainer.cs" />
+    <Compile Include="Models\Filtering\ClassFilterItem.cs" />
+    <Compile Include="Models\Filtering\Filter.cs" />
+    <Compile Include="Classes\Sorting\GridViewSorter.cs" />
+    <Compile Include="Classes\Parser.cs" />
+    <Compile Include="Classes\Paths.cs" />
+    <Compile Include="Classes\RelayCommand.cs" />
+    <Compile Include="Converters\IRatingConverter.cs" />
+    <Compile Include="Models\Drivers\DriverContainerCollection.cs" />
+    <Compile Include="Models\Drivers\DriverLiveInfo.cs" />
+    <Compile Include="Models\Drivers\DriverResults.cs" />
+    <Compile Include="Models\Filtering\DriverFilter.cs" />
+    <Compile Include="Models\Laptime.cs" />
+    <Compile Include="Models\License.cs" />
+    <Compile Include="Models\Penalties\PenaltyContainer.cs" />
+    <Compile Include="Models\Penalties\PenaltyReason.cs" />
+    <Compile Include="Models\Server\ServerInfo.cs" />
+    <Compile Include="Models\SessionData.cs" />
+    <Compile Include="Models\Track.cs" />
+    <Compile Include="Models\ViewModels\AdminListModel.cs" />
+    <Compile Include="Models\ViewModels\DecidePenaltyViewModel.cs" />
+    <Compile Include="Models\ViewModels\DriverListModel.cs" />
+    <Compile Include="Models\ViewModels\PenaltyListModel.cs" />
+    <Compile Include="Models\ViewModels\ReplayBarModel.cs" />
+    <Compile Include="Models\ViewModels\SettingsViewModel.cs" />
+    <Compile Include="Models\ViewModels\TrackBarModel.cs" />
+    <Compile Include="Models\Admins\UserCameraCollection.cs" />
+    <Compile Include="Models\Admins\UserContainer.cs" />
+    <Compile Include="Models\Admins\UserContainerCollection.cs" />
+    <Compile Include="Selectors\AdminViewSelectors.cs" />
+    <Compile Include="Server\LiveAdmin.cs" />
+    <Compile Include="Server\Server.cs" />
+    <Compile Include="Server\ServerWindow.xaml.cs">
+      <DependentUpon>ServerWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sync\CameraDetails.cs" />
+    <Compile Include="Sync\ConnectionResult.cs" />
+    <Compile Include="Sync\Penalties\Penalty.cs" />
+    <Compile Include="Sync\Penalties\PenaltyResult.cs" />
+    <Compile Include="Sync\ReplayEvent.cs" />
+    <Compile Include="Sync\SyncMessage.cs" />
+    <Compile Include="Sync\SyncState.cs" />
+    <Compile Include="Sync\SyncStateUpdate.cs" />
+    <Compile Include="Sync\SyncCommandHelper.cs" />
+    <Compile Include="Sync\SyncManager.cs" />
+    <Compile Include="Sync\User.cs" />
+    <Compile Include="Sync\UserList.cs" />
+    <Compile Include="Views\BookmarksView.xaml.cs">
+      <DependentUpon>BookmarksView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ConfirmCameraSyncWindow.xaml.cs">
+      <DependentUpon>ConfirmCameraSyncWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MessageWindow.xaml.cs">
+      <DependentUpon>MessageWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OfftrackLimitsView.xaml.cs">
+      <DependentUpon>OfftrackLimitsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Penalties\DecidePenaltyWindow.xaml.cs">
+      <DependentUpon>DecidePenaltyWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Penalties\EditPenaltyWindow.xaml.cs">
+      <DependentUpon>EditPenaltyWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Penalties\SelectUserWindow.xaml.cs">
+      <DependentUpon>SelectUserWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReplayBarView.xaml.cs">
+      <DependentUpon>ReplayBarView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SendCommandWindow.xaml.cs">
+      <DependentUpon>SendCommandWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SettingsWindow.xaml.cs">
+      <DependentUpon>SettingsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SyncConnectWindow.xaml.cs">
+      <DependentUpon>SyncConnectWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SyncView.xaml.cs">
+      <DependentUpon>SyncView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tabs\AdminsView.xaml.cs">
+      <DependentUpon>AdminsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tabs\DriversView.xaml.cs">
+      <DependentUpon>DriversView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tabs\PenaltiesView.xaml.cs">
+      <DependentUpon>PenaltiesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TrackBarView.xaml.cs">
+      <DependentUpon>TrackBarView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WindowBase.cs" />
+    <Page Include="Resources\Icons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Server\ServerWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\AdminList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Buttons.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Converters.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\DataGrids.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\DriverList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\MetroCustomBlue.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\PenaltyList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\BookmarksView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ConfirmCameraSyncWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MessageWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\OfftrackLimitsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Penalties\DecidePenaltyWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Penalties\EditPenaltyWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Drivers\Driver.cs" />
+    <Compile Include="Models\Drivers\DriverContainer.cs" />
+    <Compile Include="Models\ViewModels\MainViewModel.cs" />
+    <Compile Include="Models\ViewModels\SdkViewModel.cs" />
+    <Compile Include="Models\ViewModels\ViewModelbase.cs" />
+    <Compile Include="Classes\Simulator.cs" />
+    <Compile Include="Views\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Views\Penalties\SelectUserWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ReplayBarView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SendCommandWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SettingsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SyncConnectWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SyncView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Tabs\AdminsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Tabs\DriversView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Tabs\PenaltiesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TrackBarView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="LiveAdmin\liveadminpost.php" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <Resource Include="Resources\Entypo.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Alchemy\Alchemy.csproj">
+      <Project>{45486cde-86a3-4769-952f-e0821bf79493}</Project>
+      <Name>Alchemy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Charts\Swordfish.NET.Charts.csproj">
+      <Project>{6cd2e47b-4ddf-493f-a667-7f1f8ae6c530}</Project>
+      <Name>Swordfish.NET.Charts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\iRacingSdkWrapper\iRacingSdkWrapper.csproj">
+      <Project>{d6db568b-35b3-49eb-8cb3-e4e5f1424247}</Project>
+      <Name>iRacingSdkWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\iRacingSimulator\iRacingSimulator.csproj">
+      <Project>{3cba43f7-f10f-4e14-8e77-391c86c95375}</Project>
+      <Name>iRacingSimulator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\irsdkSharp\iRSDKSharp.csproj">
+      <Project>{72631b85-eb9a-473e-9b4c-65b355a9000d}</Project>
+      <Name>iRSDKSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xceed.Wpf.AvalonDock.Themes.Expression\Xceed.Wpf.AvalonDock.Themes.Expression.csproj">
+      <Project>{488dd8f7-9d3c-4f53-bd1f-84a095d9bc10}</Project>
+      <Name>Xceed.Wpf.AvalonDock.Themes.Expression</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LiveAdmin\liveadmin\convert.js" />
+    <Content Include="LiveAdmin\liveadmin.html" />
+    <Content Include="LiveAdmin\liveadmin\config.js" />
+    <Content Include="LiveAdmin\liveadmin\liveadmin.js" />
+    <Content Include="LiveAdmin\liveadmin\style.css" />
+    <Resource Include="Resources\Entypo-license.txt" />
+    <Resource Include="Resources\WindowsIcons-license.txt" />
+    <Resource Include="offtracks.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="todo.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\PostSharp.3.1.48\tools\PostSharp.targets" Condition="Exists('..\packages\PostSharp.3.1.48\tools\PostSharp.targets')" />
+  <Target Name="EnsurePostSharpImported" BeforeTargets="BeforeBuild" Condition="'$(PostSharp30Imported)' == ''">
+    <Error Condition="!Exists('..\packages\PostSharp.3.1.48\tools\PostSharp.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://www.postsharp.net/links/nuget-restore." />
+    <Error Condition="Exists('..\packages\PostSharp.3.1.48\tools\PostSharp.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://www.postsharp.net/links/nuget-restore." />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

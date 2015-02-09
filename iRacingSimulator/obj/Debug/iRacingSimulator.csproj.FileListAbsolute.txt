@@ -1,0 +1,46 @@
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\iRacingSimulator\bin\Debug\sessioninfo_example.yaml
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\iRacingSimulator\bin\Debug\iRacingSimulator.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\iRacingSimulator\bin\Debug\iRacingSimulator.pdb
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\iRacingSimulator\bin\Debug\iRacingSdkWrapper.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\iRacingSimulator\bin\Debug\YamlDotNet.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\iRacingSimulator\bin\Debug\iRSDKSharp.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\iRacingSimulator\bin\Debug\iRacingSdkWrapper.pdb
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\iRacingSimulator\bin\Debug\YamlDotNet.pdb
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\iRacingSimulator\bin\Debug\iRSDKSharp.pdb
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\iRacingSimulator\obj\Debug\iRacingSimulator.csprojResolveAssemblyReference.cache
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\iRacingSimulator\obj\Debug\iRacingSimulator.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin\iRacingSimulator\obj\Debug\iRacingSimulator.pdb
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\iRacingSimulator\bin\Debug\sessioninfo_example.yaml
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\iRacingSimulator\bin\Debug\iRacingSimulator.dll
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\iRacingSimulator\bin\Debug\iRacingSimulator.pdb
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\iRacingSimulator\bin\Debug\iRacingSdkWrapper.dll
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\iRacingSimulator\bin\Debug\YamlDotNet.dll
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\iRacingSimulator\bin\Debug\iRSDKSharp.dll
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\iRacingSimulator\bin\Debug\iRacingSdkWrapper.pdb
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\iRacingSimulator\bin\Debug\YamlDotNet.pdb
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\iRacingSimulator\bin\Debug\iRSDKSharp.pdb
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\iRacingSimulator\obj\Debug\iRacingSimulator.csprojResolveAssemblyReference.cache
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\iRacingSimulator\obj\Debug\iRacingSimulator.dll
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin\iRacingSimulator\obj\Debug\iRacingSimulator.pdb
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\iRacingSimulator\bin\Debug\sessioninfo_example.yaml
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\iRacingSimulator\bin\Debug\iRacingSimulator.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\iRacingSimulator\bin\Debug\iRacingSimulator.pdb
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\iRacingSimulator\bin\Debug\iRacingSdkWrapper.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\iRacingSimulator\bin\Debug\YamlDotNet.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\iRacingSimulator\bin\Debug\iRSDKSharp.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\iRacingSimulator\bin\Debug\iRacingSdkWrapper.pdb
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\iRacingSimulator\bin\Debug\iRSDKSharp.pdb
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\iRacingSimulator\obj\Debug\iRacingSimulator.csprojResolveAssemblyReference.cache
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\iRacingSimulator\obj\Debug\iRacingSimulator.dll
+F:\Users\Nick\Dropbox\VS Projects\iRacingAdmin - Copy\iRacingSimulator\obj\Debug\iRacingSimulator.pdb
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin - Copy\iRacingSimulator\bin\Debug\sessioninfo_example.yaml
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin - Copy\iRacingSimulator\bin\Debug\iRacingSimulator.dll
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin - Copy\iRacingSimulator\bin\Debug\iRacingSimulator.pdb
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin - Copy\iRacingSimulator\bin\Debug\iRacingSdkWrapper.dll
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin - Copy\iRacingSimulator\bin\Debug\YamlDotNet.dll
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin - Copy\iRacingSimulator\bin\Debug\iRSDKSharp.dll
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin - Copy\iRacingSimulator\bin\Debug\iRacingSdkWrapper.pdb
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin - Copy\iRacingSimulator\bin\Debug\iRSDKSharp.pdb
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin - Copy\iRacingSimulator\obj\Debug\iRacingSimulator.csprojResolveAssemblyReference.cache
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin - Copy\iRacingSimulator\obj\Debug\iRacingSimulator.dll
+C:\Users\nthissen\Dropbox\VS Projects\iRacingAdmin - Copy\iRacingSimulator\obj\Debug\iRacingSimulator.pdb

@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ext="clr-namespace:iRacingAdmin.Extensions">
+    
+    <Style TargetType="TextBlock" x:Key="HeaderLabel">
+        <Setter Property="Padding" Value="5" />
+        <Setter Property="FontSize" Value="12pt" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="Background" Value="{DynamicResource AvalonDock_Expression_BaseColor1}" />
+    </Style>
+
+</ResourceDictionary>

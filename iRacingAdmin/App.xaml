@@ -1,0 +1,32 @@
+﻿<Application x:Class="iRacingAdmin.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- Metro -->
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <!--<ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />-->
+
+                <ResourceDictionary Source="Themes/MetroCustomBlue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseDark.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Clean/Cleanwindow.xaml" />
+                <ResourceDictionary Source="/Resources/Icons.xaml" />
+                
+                <!-- Custom -->
+                <ResourceDictionary Source="Themes/Converters.xaml" />
+                <ResourceDictionary Source="Themes/Generic.xaml" />
+                <ResourceDictionary Source="Themes/DataGrids.xaml" />
+                <ResourceDictionary Source="Themes/DriverList.xaml" />
+                <ResourceDictionary Source="Themes/AdminList.xaml" />
+                <ResourceDictionary Source="Themes/PenaltyList.xaml" />
+                <ResourceDictionary Source="Themes/Buttons.xaml" />
+                
+                <!-- AvalonDock dark -->
+                <ResourceDictionary Source="pack://application:,,,/Xceed.Wpf.AvalonDock.Themes.Expression;component/darktheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

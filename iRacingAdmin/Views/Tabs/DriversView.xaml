@@ -1,0 +1,214 @@
+﻿<UserControl x:Class="iRacingAdmin.Views.Tabs.DriversView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:classes="clr-namespace:iRacingAdmin.Classes"
+             xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+             xmlns:filtering="clr-namespace:iRacingAdmin.Models.Filtering"
+             xmlns:tabs="clr-namespace:iRacingAdmin.Views.Tabs"
+             xmlns:dragDrop="clr-namespace:iRacingAdmin.Classes.DragDrop"
+             xmlns:drivers="clr-namespace:iRacingAdmin.Models.Drivers"
+             xmlns:sorting="clr-namespace:iRacingAdmin.Classes.Sorting"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+   
+    <UserControl.Resources>
+        <sorting:ClassPositionSorter x:Key="ClassPositionSorter"></sorting:ClassPositionSorter>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <TextBox Text="{Binding DriverFilter.NumberFilter.Property, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                       Width="60" Margin="5"
+                     controls:TextboxHelper.Watermark="#"
+                     controls:TextboxHelper.ClearTextButton="True" />
+            
+            <TextBox Text="{Binding DriverFilter.NameFilter.Property, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                       Width="150" Margin="5"
+                     controls:TextboxHelper.Watermark="Name"
+                     controls:TextboxHelper.ClearTextButton="True" />
+
+            <TextBox Text="{Binding DriverFilter.TeamFilter.Property, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                       Width="150" Margin="5"
+                     controls:TextboxHelper.Watermark="Team"
+                     controls:TextboxHelper.ClearTextButton="True" />
+
+            <ComboBox Width="55" Margin="5"
+                      ItemsSource="{Binding ClassFilterItems, UpdateSourceTrigger=PropertyChanged}"
+                      SelectedItem="{Binding DriverFilter.ClassFilter.Property, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate DataType="filtering:ClassFilterItem">
+                        <Border Height="14" Width="20" Background="{Binding Brush}">
+                            <TextBlock Text="{Binding Text}" Foreground="{DynamicResource GrayBrush6}"
+                                       VerticalAlignment="Center" />
+                        </Border>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+        </StackPanel>
+
+        <DataGrid ItemsSource="{Binding DriversView, UpdateSourceTrigger=PropertyChanged}"
+                  x:Name="grid"
+                  Grid.Row="1"
+                  SelectedItem="{Binding SelectedDriver, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                  SelectionChanged="Grid_OnSelectionChanged"
+                  Style="{StaticResource GridStyle}"
+                  RowStyle="{StaticResource DriverGridRowStyle}"
+                  IsReadOnly="True"
+                  MouseDoubleClick="Drivers_OnDoubleClick"
+                  sorting:CustomSortBehaviour.AllowCustomSort="True"
+                  dragDrop:DragDropHelper.IsDragSource="True"
+                  dragDrop:DragDropHelper.IsDropTarget="False"
+                  dragDrop:DragDropHelper.DragDropTemplate="{StaticResource DriverDragDropTemplate}">
+            
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="#" SortMemberPath="Driver.CarNumber">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate DataType="drivers:DriverContainer">
+
+                            <Border Width="30"
+                            Height="20"
+                            Background="{Binding Driver.CarClassColor, Converter={StaticResource ColorToBrushConverter}}">
+                                <TextBlock Text="{Binding Driver.CarNumber}" 
+                                   Foreground="Black"
+                                   Padding="0,2"
+                                   HorizontalAlignment="Center"
+                                   FontWeight="Bold" />
+                            </Border>
+
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Driver" SortMemberPath="Driver.Name">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate DataType="drivers:DriverContainer">
+                            <TextBlock Name="text"  Text="{Binding Driver.Name}"
+                               FontWeight="Bold"
+                               Margin="5,3" />
+                            <DataTemplate.Triggers>
+                                <DataTrigger  Binding="{Binding Watching, UpdateSourceTrigger=PropertyChanged}" Value="True">
+                                    <Setter TargetName="text" Property="Foreground" Value="Lime"></Setter>
+                                </DataTrigger>
+                            </DataTemplate.Triggers>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Team" SortMemberPath="Driver.TeamName">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate DataType="drivers:DriverContainer">
+                            <TextBlock Text="{Binding Driver.TeamName}"
+                               Margin="5,3" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTextColumn Header="Pos" SortMemberPath="Driver.Results.Current.Position" Binding="{Binding Driver.Results.Current.Position}" />
+                
+                <DataGridTextColumn Header="Class Pos" 
+                                    sorting:CustomSortBehaviour.CustomSorter="{StaticResource ClassPositionSorter}"
+                                    Binding="{Binding Driver.Results.Current.ClassPosition}" />
+
+                <DataGridTextColumn Header="Car" SortMemberPath="Driver.CarName" Binding="{Binding Driver.CarName}" />
+
+                <!--<DataGridTextColumn Header="Offtrack #" SortMemberPath="Driver.OfftrackTotalCount" Binding="{Binding Driver.OfftrackTotalCount}" />--> 
+
+                <DataGridTemplateColumn Header="Track status" CanUserSort="False">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate DataType="drivers:DriverContainer">
+
+                            <Grid>
+
+                                <Grid x:Name="offtrackGrid" Visibility="Hidden">
+                                    <Border Background="DarkRed" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                        <TextBlock Text="OFFTRACK" FontSize="8pt" FontWeight="Bold"
+                                           Margin="3" TextAlignment="Center" />
+                                    </Border>
+                                </Grid>
+
+                                <Grid x:Name="pitGrid" Visibility="Hidden">
+                                    <Border Background="{DynamicResource GrayBrush3}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                        <TextBlock Text="Pit" FontSize="8pt" FontWeight="Bold"
+                                           Margin="3" TextAlignment="Center" />
+                                    </Border>
+                                </Grid>
+
+                                <Grid x:Name="approachPitGrid" Visibility="Hidden">
+                                    <Border Background="{DynamicResource GrayBrush6}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                        <TextBlock Text="Pitroad" FontSize="8pt" FontWeight="Bold"
+                                           Margin="3" TextAlignment="Center" />
+                                    </Border>
+                                </Grid>
+
+                            </Grid>
+
+                            <DataTemplate.Triggers>
+                                <DataTrigger Binding="{Binding Driver.Live.TrackSurface}" Value="OffTrack">
+                                    <Setter TargetName="offtrackGrid" Property="Visibility" Value="Visible" />
+                                    <Setter TargetName="pitGrid" Property="Visibility" Value="Hidden" />
+                                    <Setter TargetName="approachPitGrid" Property="Visibility" Value="Hidden" />
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding Driver.Live.TrackSurface}" Value="InPitStall">
+                                    <Setter TargetName="offtrackGrid" Property="Visibility" Value="Hidden" />
+                                    <Setter TargetName="pitGrid" Property="Visibility" Value="Visible" />
+                                    <Setter TargetName="approachPitGrid" Property="Visibility" Value="Hidden" />
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding Driver.Live.TrackSurface}" Value="AproachingPits">
+                                    <Setter TargetName="offtrackGrid" Property="Visibility" Value="Hidden" />
+                                    <Setter TargetName="pitGrid" Property="Visibility" Value="Hidden" />
+                                    <Setter TargetName="approachPitGrid" Property="Visibility" Value="Visible" />
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding Driver.Live.TrackSurface}" Value="NotInWorld">
+                                    <Setter TargetName="offtrackGrid" Property="Visibility" Value="Hidden" />
+                                    <Setter TargetName="pitGrid" Property="Visibility" Value="Hidden" />
+                                    <Setter TargetName="approachPitGrid" Property="Visibility" Value="Hidden" />
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding Driver.Live.TrackSurface}" Value="OnTrack">
+                                    <Setter TargetName="offtrackGrid" Property="Visibility" Value="Hidden" />
+                                    <Setter TargetName="pitGrid" Property="Visibility" Value="Hidden" />
+                                    <Setter TargetName="approachPitGrid" Property="Visibility" Value="Hidden" />
+                                </DataTrigger>
+                            </DataTemplate.Triggers>
+
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTextColumn Header="Delta" SortMemberPath="Driver.Delta.ToNext.Display" Binding="{Binding Driver.Delta.ToNext.Display}"
+                                    Foreground="{Binding Driver.Delta.ToNext, Converter={StaticResource DeltaTimeColorConverter}}"/>
+
+                <DataGridTextColumn Header="Last pit" SortMemberPath="Driver.PitInfo.LastPitStallTimeDisplay" Binding="{Binding Driver.PitInfo.LastPitStallTimeDisplay}" />
+
+                <!-- <DataGridTemplateColumn Header="License" SortMemberPath="Driver.License.SortOrder">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate DataType="drivers:DriverContainer">
+                            <Border HorizontalAlignment="Stretch" Background="{Binding Driver.License.BackgroundColor, Converter={StaticResource ColorToBrushConverter}}">
+
+                                <TextBlock Text="{Binding Driver.License.Display}"
+                                   Foreground="{Binding Driver.License.TextColor, Converter={StaticResource ColorToBrushConverter}}" 
+                                   FontWeight="Bold"
+                                   TextAlignment="Center"
+                                   FontSize="8pt"
+                                   Margin="10,3" />
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTextColumn Header="iRating" Binding="{Binding Driver.IRating}" SortMemberPath="Driver.IRating"/>-->
+            </DataGrid.Columns>
+            
+            <DataGrid.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Investigate new incident" Command="{Binding InvestigateCommand}" />
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+        </DataGrid>
+    </Grid>
+</UserControl>

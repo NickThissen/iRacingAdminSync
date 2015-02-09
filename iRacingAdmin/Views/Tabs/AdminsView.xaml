@@ -1,0 +1,119 @@
+﻿<UserControl x:Class="iRacingAdmin.Views.Tabs.AdminsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:classes="clr-namespace:iRacingAdmin.Classes"
+             xmlns:admins="clr-namespace:iRacingAdmin.Models.Admins"
+             xmlns:controls="clr-namespace:iRacingAdmin.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <DataGrid x:Name="grid" ItemsSource="{Binding AdminsView, UpdateSourceTrigger=PropertyChanged}"
+                  SelectedItem="{Binding SelectedAdmin, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                  Style="{StaticResource GridStyle}">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="Admin" Width="150">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate DataType="admins:UserContainer">
+                            <DockPanel>
+                                <Border DockPanel.Dock="Left" 
+                                Width="20" Height="20">
+                                    <Border.Background>
+                                        <SolidColorBrush Color="{Binding User.Color}" />
+                                    </Border.Background>
+                                </Border>
+
+                                <TextBlock Text="{Binding User.Name}" Margin="10,5" />
+                            </DockPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Watching" Width="200">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate DataType="admins:UserContainer">
+                            <Grid>
+                                <Grid x:Name="WatchingGrid">
+                                    <DockPanel>
+
+                                        <Border Width="30" DockPanel.Dock="Left"
+                            Height="20"
+                            Background="{Binding WatchedDriver.CarClassColor, Converter={StaticResource ColorToBrushConverter}}">
+                                            <TextBlock Text="{Binding WatchedDriver.CarNumber, UpdateSourceTrigger=PropertyChanged}" 
+                                   Foreground="Black"
+                                   Padding="0,2"
+                                   HorizontalAlignment="Center"
+                                   FontWeight="Bold" />
+                                        </Border>
+
+                                        <TextBlock Text="{Binding WatchedDriver.Name, UpdateSourceTrigger=PropertyChanged}" Margin="5" />
+                                    </DockPanel>
+                                </Grid>
+
+                                <Grid x:Name="NotWatchingGrid">
+                                    <TextBlock Text="-" HorizontalAlignment="Center" Margin="5" />
+                                </Grid>
+                            </Grid>
+                            <DataTemplate.Triggers>
+                                <DataTrigger Binding="{Binding IsWatching}" Value="True">
+                                    <Setter TargetName="WatchingGrid" Property="Visibility" Value="Visible" />
+                                    <Setter TargetName="NotWatchingGrid" Property="Visibility" Value="Collapsed" />
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding IsWatching}" Value="False">
+                                    <Setter TargetName="NotWatchingGrid" Property="Visibility" Value="Visible" />
+                                    <Setter TargetName="WatchingGrid" Property="Visibility" Value="Collapsed" />
+                                </DataTrigger>
+                            </DataTemplate.Triggers>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Replay status" Width="130">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate DataType="admins:UserContainer">
+                            <Grid HorizontalAlignment="Stretch">
+                                <Grid x:Name="LiveGrid">
+                                    <TextBlock Text="LIVE" 
+                                   Foreground="White"
+                       Background="LimeGreen"
+                                   Padding="10,5"
+                                   HorizontalAlignment="Stretch"
+                                       TextAlignment="Center"
+                                   FontWeight="Bold" />
+                                </Grid>
+
+                                <Grid x:Name="NotLiveGrid">
+                                    <TextBlock Text="NOT LIVE" 
+                                   Foreground="White"
+                       Background="DarkRed"
+                                   Padding="10,5"
+                                   HorizontalAlignment="Stretch"
+                                       TextAlignment="Center"
+                                   FontWeight="Bold" />
+                                </Grid>
+                            </Grid>
+                            <DataTemplate.Triggers>
+                                <DataTrigger Binding="{Binding IsLive}" Value="True">
+                                    <Setter TargetName="LiveGrid" Property="Visibility" Value="Visible" />
+                                    <Setter TargetName="NotLiveGrid" Property="Visibility" Value="Collapsed" />
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding IsWatching}" Value="False">
+                                    <Setter TargetName="NotLiveGrid" Property="Visibility" Value="Visible" />
+                                    <Setter TargetName="LiveGrid" Property="Visibility" Value="Collapsed" />
+                                </DataTrigger>
+                            </DataTemplate.Triggers>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+
+            <DataGrid.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Propose camera sync" Command="{Binding Path=PlacementTarget.DataContext.ProposeSyncCameraCommand, RelativeSource={RelativeSource AncestorType=ContextMenu}}" />
+                    <MenuItem Header="{Binding SelectedAdmin.User.Name}" HeaderStringFormat="Sync to {0}" Command="{Binding}" />
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+        </DataGrid>
+    </Grid>
+    </UserControl>

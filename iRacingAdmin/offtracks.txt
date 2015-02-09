@@ -1,0 +1,34 @@
+﻿if (new track status == offtrack)
+{
+	// New tick: offtrack
+	
+	if (prev track status != offtrack)
+	{
+		// Transition to offtrack --> check timeout
+		if (last offtrack != null and last offtrack end time <= current time - 2)
+		{
+			// Another offtrack within 2 seconds --> ignore
+			ignore
+		}
+		else
+		{
+			// New offtrack more than 2 seconds after timeout --> inc
+			CURRENT_OFFTRACK = start new offtrack @ current time
+		}
+	}	
+	else	
+	{
+		// Car was already offtrack last tick --> ignore
+		ignore
+	}
+}
+else
+{
+	// New tick: on track
+	
+	if (CURRENT_OFFTRACK != null)
+	{
+		// An offtrack was in progress --> transition to ontrack
+		end current offtrack @ current time
+	}
+}

@@ -1,0 +1,18 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ext="clr-namespace:iRacingAdmin.Extensions"
+                    xmlns:admins="clr-namespace:iRacingAdmin.Models.Admins">
+
+    <!--<Style TargetType="DataGrid" BasedOn="{StaticResource {x:Type DataGrid}}" />-->
+
+    <Style TargetType="DataGrid" BasedOn="{StaticResource {x:Type DataGrid}}" x:Key="GridStyle">
+        <Setter Property="AutoGenerateColumns" Value="False" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="0" />
+    </Style>
+
+    <DataTemplate DataType="{x:Type admins:UserContainer}">
+        
+    </DataTemplate>
+    
+</ResourceDictionary>
