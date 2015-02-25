@@ -10,7 +10,7 @@ using iRacingAdmin.Models.Drivers;
 
 namespace iRacingAdmin.Converters
 {
-    public class DeltaTimeColorConverter : IValueConverter
+    public class DeltaTimeBrushConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
