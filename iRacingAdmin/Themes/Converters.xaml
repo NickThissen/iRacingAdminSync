@@ -8,5 +8,5 @@
     <converters:PingColorConverter x:Key="PingColorConverter" />
     <converters:PingValueConverter x:Key="PingValueConverter" />
     <converters:ColorToBrushConverter x:Key="ColorToBrushConverter" />
-    <converters:DeltaTimeColorConverter x:Key="DeltaTimeColorConverter"></converters:DeltaTimeColorConverter>
+    <converters:DeltaTimeBrushConverter x:Key="DeltaTimeBrushConverter" />
 </ResourceDictionary>

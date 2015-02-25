@@ -85,7 +85,7 @@
     <Compile Include="Classes\DragDrop\Utilities.cs" />
     <Compile Include="Classes\Log.cs" />
     <Compile Include="Classes\ShortGuid.cs" />
-    <Compile Include="Converters\DeltaTimeColorConverter.cs" />
+    <Compile Include="Converters\DeltaTimeBrushConverter.cs" />
     <Compile Include="Models\TimeDelta.cs" />
     <Compile Include="Controls\PopupDataGrid.cs" />
     <Compile Include="Converters\AdminBrushConverter.cs" />
