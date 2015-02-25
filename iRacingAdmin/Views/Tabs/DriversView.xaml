@@ -180,9 +180,15 @@
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
 
-                <DataGridTextColumn Header="Delta" SortMemberPath="Driver.Delta.ToNext.Display" Binding="{Binding Driver.Delta.ToNext.Display}"
-                                    Foreground="{Binding Driver.Delta.ToNext, Converter={StaticResource DeltaTimeColorConverter}}"/>
 
+                <DataGridTemplateColumn Header="Delta" SortMemberPath="Driver.Delta.ToNext.Display">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Driver.Delta.ToNext.Display}"
+                               Foreground="{Binding Driver.Delta.ToNext, Converter={StaticResource DeltaTimeBrushConverter}}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>                
                 <DataGridTextColumn Header="Last pit" SortMemberPath="Driver.PitInfo.LastPitStallTimeDisplay" Binding="{Binding Driver.PitInfo.LastPitStallTimeDisplay}" />
 
                 <!-- <DataGridTemplateColumn Header="License" SortMemberPath="Driver.License.SortOrder">
