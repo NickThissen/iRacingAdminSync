@@ -185,7 +185,7 @@
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <TextBlock Text="{Binding Driver.Delta.ToNext.Display}"
-                               Foreground="{Binding Driver.Delta.ToNext, Converter={StaticResource DeltaTimeColorConverter}}"/>
+                               Foreground="{Binding Driver.Delta.ToNext, Converter={StaticResource DeltaTimeBrushConverter}}"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>                
