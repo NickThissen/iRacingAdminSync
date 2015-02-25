@@ -30,12 +30,12 @@ namespace iRacingAdmin.Converters
                             var red = (byte)(255*percentage);
                             if (red > 255) red = 255;
 
-                            return Color.FromArgb(255, red, 0, 0);
+                            return new SolidColorBrush(Color.FromArgb(255, red, 0, 0));
                         }
                     }
                 }
             }
-            return Colors.White;
+            return Brushes.White;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
