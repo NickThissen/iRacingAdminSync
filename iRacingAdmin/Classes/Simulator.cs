@@ -179,10 +179,12 @@ namespace iRacingAdmin
                     continue;
                 }
 
-                int id = int.Parse(idValue);
-
-                var driver = _drivers.Single(d => d.Driver.Id == id).Driver;
-                driver.UpdateResultsInfo(this.CurrentSessionNumber.GetValueOrDefault(), positionQuery, position);
+                int id = int.Parse(idValue);                
+                var driverContainer = _drivers.SingleOrDefault(d => d.Driver.Id == id);
+                if (driverContainer != null)
+                {
+                    driverContainer.Driver.UpdateResultsInfo(this.CurrentSessionNumber.GetValueOrDefault(), positionQuery, position);
+                }
             }
         }
 
