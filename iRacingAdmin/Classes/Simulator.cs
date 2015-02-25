@@ -134,12 +134,6 @@ namespace iRacingAdmin
                 {
                     // Create new driver from session info
                     driver = Driver.FromSessionInfo(sessionInfo, id);
-
-                    // If we did not find a driver, we reached the end of the list
-                    if (driver == null)
-                    {
-                        break;
-                    }
                 }
                 else
                 {
@@ -149,16 +143,19 @@ namespace iRacingAdmin
                 }
 
                 // Check if this driver is already in the list
-                var existing = _drivers.FromId(id);
-                if (existing == null)
+                if (driver != null)
                 {
-                    // Add him
-                    App.Instance.Dispatcher.Invoke(() => _drivers.Add(new DriverContainer(driver)));
-                }
-                else
-                {
-                    // Update only
-                    existing.Driver = driver;
+                    var existing = _drivers.FromId(id);
+                    if (existing == null)
+                    {
+                        // Add him
+                        App.Instance.Dispatcher.Invoke(() => _drivers.Add(new DriverContainer(driver)));
+                    }
+                    else
+                    {
+                        // Update only
+                        existing.Driver = driver;
+                    }
                 }
             }
         }
